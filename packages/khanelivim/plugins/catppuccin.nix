@@ -58,7 +58,6 @@
         };
     };
 
-    lualine.settings.options.theme = "catppuccin";
   };
 
   colorschemes.catppuccin = {

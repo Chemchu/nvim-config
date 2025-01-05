@@ -12,8 +12,8 @@
     };
   };
 
-  colorscheme = "catppuccin";
-  colorschemes.catppuccin.enable = true;
+  colorscheme = "onedark";
+  colorschemes.onedark.enable = true;
   highlight.ExtraWhitespace.bg = "red"; # Highlight extra white spaces
   luaLoader.enable = true;
   match.ExtraWhitespace = "\\s\\+$"; # Remove extra white spaces
