@@ -106,7 +106,7 @@
                 action = "<cmd>move+<CR>";
               };
 
-              "<Leader>w" = {
+              "<Leader>s" = {
                 action = "<Cmd>w<CR>"; # Action to perform (save the file in this case)
                 options = {
                   desc = "Save";
@@ -139,7 +139,7 @@
                   desc = "New file";
                 };
               };
-              "<leader>W" = {
+              "<leader>S" = {
                 action = "<Cmd>w!<CR>";
                 options = {
                   desc = "Force write";
@@ -390,11 +390,11 @@
 
   plugins.which-key.settings.spec = [
     {
-      __unkeyed = "<leader>w";
+      __unkeyed = "<leader>s";
       icon = "";
     }
     {
-      __unkeyed = "<leader>W";
+      __unkeyed = "<leader>S";
       icon = "󰽃";
     }
     {
