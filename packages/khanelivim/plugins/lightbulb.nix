@@ -1,7 +1,7 @@
 {
   plugins = {
     nvim-lightbulb = {
-      enable = true;
+      enable = false;
 
       settings = {
         autocmd = {
