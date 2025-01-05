@@ -57,7 +57,7 @@
           };
         };
     };
-
+    lualine.settings.options.theme = "catppuccin";
   };
 
   colorschemes.catppuccin = {
@@ -138,7 +138,7 @@
 
       show_end_of_buffer = true;
       term_colors = true;
-      transparent_background = true;
+      transparent_background = false;
     };
   };
 }
