@@ -94,12 +94,6 @@
               # Community
               "copilot"
               "emoji"
-              # Cmp sources
-              # TODO: migrate when available
-              "calc"
-              "git"
-              "spell"
-              "zsh"
             ];
             providers = {
               # BUILT-IN SOURCES
@@ -115,45 +109,19 @@
                 module = "blink-emoji";
                 score_offset = 1;
               };
-              # Cmp sources
-              calc = {
-                name = "calc";
-                module = "blink.compat.source";
-                score_offset = 2;
-              };
-              git = {
-                name = "git";
-                module = "blink.compat.source";
-                score_offset = 0;
-              };
-              npm = {
-                name = "npm";
-                module = "blink.compat.source";
-                score_offset = -3;
-              };
-              spell = {
-                name = "spell";
-                module = "blink.compat.source";
-                score_offset = -1;
-              };
-              zsh = {
-                name = "zsh";
-                module = "blink.compat.source";
-                score_offset = -3;
-              };
             };
           };
         };
       };
     }
     (lib.mkIf config.plugins.blink-cmp.enable {
-      cmp-calc.enable = true;
-      cmp-git.enable = true;
+      cmp-calc.enable = false;
+      cmp-git.enable = false;
       #cmp-nixpkgs_maintainers.enable = true;
       # cmp-npm.enable = true;
-      cmp-spell.enable = true;
+      cmp-spell.enable = false;
       # cmp-treesitter.enable = true;
-      cmp-zsh.enable = true;
+      cmp-zsh.enable = false;
 
       lsp.capabilities = # Lua
         ''
